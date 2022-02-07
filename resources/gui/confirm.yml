@@ -1,0 +1,52 @@
+# gui标题
+title: "&0操作确定"
+
+# 确定
+confirm:
+  # 是否使用
+  enable: true
+  # 在gui中的坐标
+  index: 11
+  # 在gui中的材质名称
+  material: WHITE_WOOL
+  isEnchant: false
+  # 在gui中的名称
+  name: "   &8[&c确定操作&8]"
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 在gui中的lore
+  lore:
+    - ''
+    - '&8▪ &7确定您的操作'
+    - '&8▪ &7本操作不可逆'
+    - ''
+    - '&8[&a✔&8] &7点击继续操作'
+
+# 取消
+cancel:
+  enable: true
+  index: 15
+  material: BLACK_WOOL
+  isEnchant: false
+  name: "   &8[&a取消操作&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7将取消您的操作'
+    - '&8▪ &7点击返回上一层'
+    - ''
+    - '&8[&a✔&8] &7点击返回'
+
+# 返回按钮
+back:
+  enable: true
+  index: 22
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0
+
+# 解散公会提醒
+dissolutionMsg: "&8[&a✔&8] &a您的公会已解散"

@@ -1,0 +1,77 @@
+# 公会称号需要前置插件 PlayerTitle
+title: "&0公会称号"
+
+# 是否启用 true开启，false关闭
+enable: true
+
+# 称号buff类型 只支持 attribute_plus 或者 sx_attribute
+buffType: "attribute_plus"
+# 称号描述
+description:
+  - '&a ${guild_name} 公会专属称号'
+
+# 公会称号设置 1:为等级，可以按照顺序无限扩展
+1:
+  # 称号名称
+  title: "&f[ &7${guild_name}成员 &f]"
+  buff:
+    - ''
+2:
+  title: "&f[ &a${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 1'
+3:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 2'
+4:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 3'
+5:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 4'
+6:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 5'
+7:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 6'
+8:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 7'
+9:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 8'
+10:
+  title: "&f[ &e${guild_name}成员 &f]"
+  buff:
+    - '&e物理伤害: 10'
+
+# 当前公会称号显示
+now:
+  index: 11
+  material: NAME_TAG
+  name: "&a当前称号: ${nowTitleName}"
+  custom-model-data: 0
+# 下级公会称号显示
+next:
+  index: 15
+  material: NAME_TAG
+  name: "&a下级称号: ${nextTitleName}"
+  custom-model-data: 0
+
+# 返回按钮
+back:
+  enable: true
+  index: 22
+  material: barrier
+  name: "   &8[&a返回&8]"
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0

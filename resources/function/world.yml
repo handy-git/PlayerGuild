@@ -1,0 +1,52 @@
+# 公会世界需要前置插件 Multiverse-Core
+
+# 世界环境 默认: NORMAL  地狱: NETHER  末地: THE_END
+environment: NORMAL
+
+# 世界类型 默认: NORMAL 超平坦: FLAT 巨型生物群系: LARGE_BIOMES 放大化: AMPLIFIED
+worldType: FLAT
+
+# 是否生成建筑
+generateStructures: true
+
+# 世界模式 和平: PEACEFUL ; 简单: EASY ; 正常: NORMAL ; 困难: HARD
+difficulty: PEACEFUL
+
+# 是否可以pvp
+PVPMode: true
+
+# 重复创建提醒
+HasBeenCreated: "&4已经创建公会世界过了 请不要重复创建."
+
+# 公会世界边境设置(需要前置插件 WorldBorder) 1:为等级，可以按照顺序无限扩展
+guildSetting:
+  1:
+    x: 100
+    z: 100
+  2:
+    x: 200
+    z: 200
+  3:
+    x: 300
+    z: 300
+  4:
+    x: 400
+    z: 400
+  5:
+    x: 500
+    z: 500
+  6:
+    x: 600
+    z: 600
+  7:
+    x: 700
+    z: 700
+  8:
+    x: 800
+    z: 800
+  9:
+    x: 900
+    z: 900
+  10:
+    x: 1000
+    z: 1000

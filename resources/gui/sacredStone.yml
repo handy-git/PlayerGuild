@@ -1,0 +1,73 @@
+# gui标题
+title: "&0公会神石"
+
+# 多久执行一次 单位秒
+time: 300
+
+# 神石每级配置
+1:
+  name: "&8[ &f低阶神石 &8]"
+  value: 1
+  price: 1000
+2:
+  name: "&8[ &3高阶神石 &8]"
+  value: 2
+  price: 5000
+3:
+  name: "&8[ &9稀有神石 &8]"
+  value: 3
+  price: 10000
+4:
+  name: "&8[ &d罕见神石 &8]"
+  value: 4
+  price: 20000
+5:
+  name: "&8[ &4传说神石 &8]"
+  value: 5
+  price: 50000
+6:
+  name: "&8[ &e史诗神石 &8]"
+  value: 6
+  price: 100000
+7:
+  name: "&8[ &e&l神话神石 &8]"
+  value: 7
+  price: 500000
+
+# 神石介绍
+info:
+  index: 13
+  material: NETHER_STAR
+  isEnchant: false
+  name: "       ${sacred_stone_name}"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7每 &a#${time} &7秒神石根据公会'
+    - '&8▪ &7当前在线数量增加活跃度'
+    - '&8▪ &7当前等级'
+    - '&8▪ &8[&a#${nowLevel}&8] &7➜ &8[&a#${nextLevel}&8]'
+    - '&8▪ &7活跃度效率'
+    - '&8▪ &7公会在线玩家[&a*${nowValue}&8] &7➜ &8[&a*${nextValue}&8]'
+    - '&8▪ &7需要支付 &a${price} &7公会资金'
+    - '&8▪ &7目前拥有 &a${money} &7公会资金'
+    - ''
+    - '${button}'
+
+# ${button}对应的变量
+yesButton: "     &8[&a✔&8] &7点击进行升级"
+noButton: "     &8[&c✘&8] &7公会贡献不足"
+maxButton: "      &8[&a✔&8] &7神石已满级"
+
+# 返回按钮
+back:
+  enable: true
+  index: 22
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0
+
+succeedMsg: "&a升级神石成功"

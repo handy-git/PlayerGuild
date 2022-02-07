@@ -1,0 +1,66 @@
+# gui标题
+title: "&0玩家信息管理"
+
+# 升级
+up:
+  # 是否使用
+  enable: true
+  # 在gui中的坐标
+  index: 11
+  # 在gui中的材质名称
+  material: DIAMOND
+  isEnchant: false
+  # 在gui中的名称
+  name: "  &8[&d提升该玩家职位&8]"
+  custom-model-data: 0
+  # 在gui中的lore
+  lore:
+    - ''
+    - '&8▪ &7提升该玩家职位'
+    - ''
+    - '&8▪ &7当前职位 &a${role}'
+    - '&8▪ &7上级职位 &a${upRole}'
+    - ''
+    - '&8[&a✔&8] &7点击操作'
+
+# 降级
+down:
+  enable: true
+  index: 13
+  material: bread
+  name: "  &8[&d降低该玩家职位&8]"
+  isEnchant: false
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7降低该玩家职位'
+    - ''
+    - '&8▪ &7当前职位 &a${role}'
+    - '&8▪ &7下级职位 &a${downRole}'
+    - ''
+    - '&8[&a✔&8] &7点击操作'
+
+# 踢出
+ban:
+  enable: true
+  index: 15
+  material: GOLD_INGOT
+  isEnchant: false
+  name: "  &8[&d踢出玩家&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7踢出玩家'
+    - ''
+    - '&8▪ &7点击踢出玩家'
+
+# 返回按钮
+back:
+  enable: true
+  index: 22
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0

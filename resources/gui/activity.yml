@@ -1,0 +1,149 @@
+# gui标题
+title: "&0公会活动"
+
+# 赛季公会战
+seasonPvp:
+  # 是否使用
+  enable: true
+  # 在gui中的坐标
+  index: 11
+  # 在gui中的材质名称
+  material: GOLDEN_AXE
+  # 在gui中的名称
+  #是否附魔效果
+  isEnchant: true
+  name: "    &8[&d赛季公会战&8]"
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 在gui中的lore
+  lore:
+    - ''
+    - '&8▪ &7第 &a${number}&7 赛季公会战'
+    - '&8▪ &a每周六 19:00 &7全服开战'
+    - '&8▪ &7超多奖励  拿到手软'
+    - '&8▪ &7非比赛日可进行报名'
+    - ''
+    - '${button}'
+  # 比赛星期几,默认星期六
+  startDate: 6
+  # 比赛时间,24小时制
+  startTime: "18:59"
+
+# 匹配公会战
+matePvp:
+  enable: true
+  index: 15
+  material: IRON_AXE
+  isEnchant: false
+  name: "    &8[&e匹配公会战&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7匹配公会战-&a公平模式'
+    - '&8▪ &7统一属性,统一装备'
+    - '&8▪ &7随时随地 即可战斗'
+    - '&8▪ &7胜利可获得公会贡献'
+    - '&8▪ &7非赛季比赛日可进行报名'
+    - '&8▪ &7今日还可参与次数: &a${number}'
+    - ''
+    - '${button}'
+  # 可参与次数
+  number: 10
+
+# 返回按钮
+back:
+  enable: true
+  index: 22
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0
+
+# ${button}对应的变量
+yesButton: " &8[&a✔&8] &7点击进行参加"
+noButton: " &8[&a✘&8] &4公会拒绝参赛"
+stopButton: " &8[&a✘&8] &7今日无法报名"
+joinButton: " &8[&a✔&8] &a公会参加成功"
+mateButton: " &8[&a✔&8] &7正在匹配中 用时: &a${time} &7秒"
+
+# 公会战消息提醒
+mateNoMsg: "&8[&a✘&8] &7公会战匹配超过5分钟 已停止匹配"
+seasonNoMsg: "&8[&a✘&8] &7很遗憾 本届公会战没有足够公会参加 已停止举办"
+stopMsg: "&8[&a✘&8] &7今天会举办赛季PVP 不能进行报名了哦"
+mateLimitMsg: "&8[&a✘&8] &7公会战匹配次数够多了,无法继续匹配"
+
+matePvpPrepareMsg: "&7匹配公会战 &a#${time} &7秒后开始 请点击报名参加"
+matePvpPrepareAccept: "&8[&a点击参加&8]    "
+matePvpPrepareRefuse: "      &8[&c点击拒绝&8]"
+matePvpNotPrepareMsg: "&8[&a✘&8 &7不在准备阶段 无法参与"
+matePvpAcceptPrepareMsg: "&8[&a✔&8] &a你已报名参加本次公会战 请做好战斗准备"
+matePvpDenyPrepareMsg: "&8[&a✔&8] &4你拒绝参加本次公会战"
+playerDropMsg: "&8[&a✘&8 &7你正在进行公会战,无法丢弃物品"
+
+matePvpTitleMsg: "&8[&a公会战&8]"
+matePvpSubTitleMsg: "&a倒计时 ➜ &a#${time}"
+matePvpSubTitleSTartMsg: "&a公会战正式开始"
+noPlayer: "&c参赛人数不足 已取消本次公会战"
+
+# 公会战结束提醒
+matePvpFinishSubTitleMsg: "&7公会战获胜方 &a${win} &7公会战失败方 &c${fail}"
+# 公会战结束全服提醒(留空代表不发消息)
+matePvpFinishAllMsg: "&8[&c!&8] &a&l${win}&7 &7&l在公会战中战胜了 &c&l${fail}&7 &7[&6&l${win}&7]&7参战成员获得&f[&b贡献*50&f]"
+
+# 公会战奖励
+matePvpWin: 50
+matePvpWinMsg: "&7公会战挑战胜利 你获得了胜利奖励 &8[&a贡献×${money}&8]"
+matePvpFail: 10
+matePvpFailMsg: "&7公会战挑战失败 你获得了参与奖励 &8[&a贡献×${money}&8]"
+
+# 公会战开始后的发送通知消息
+notice:
+  # 范围 不发 not , 只有op接收 op , 全部玩家 all
+  range: "op"
+  msg: "&a${one} &fVS &c${two} &f匹配公会战开始了！"
+
+# 赛季公会战
+season:
+  # 场地名称
+  location: "&a赛季公会战场地"
+  # 场地观看点名称
+  lookLocation: "观看点"
+  noPlayer: "&c参赛公会不足 已取消本次赛季公会战"
+  seasonPvpPrepareMsg: "&7赛季公会战 &a#${time} &7秒后开始 请点击报名参加"
+  endMsg: "&8[&c!&8] &a&l${win}&7 &7&l在赛季公会战中获得了第 &a${rank} &7名的成绩，获得奖励, 公会贡献:&a${guildMoney}&7,公会活跃:&a${guildActive} &7,&7参战成员获得&f[&b贡献*${playerMoney}&f]"
+  # 胜利奖励
+  reward:
+    # 参赛奖励
+    all:
+      # 公会贡献
+      guildMoney: 100
+      # 公会活跃
+      guildActive: 100
+      # 玩家贡献
+      playerMoney: 100
+    # 第三名
+    3:
+      # 公会贡献
+      guildMoney: 500
+      # 公会活跃
+      guildActive: 500
+      # 玩家贡献
+      playerMoney: 500
+    # 第二名
+    2:
+      # 公会贡献
+      guildMoney: 1000
+      # 公会活跃
+      guildActive: 1000
+      # 玩家贡献
+      playerMoney: 1000
+    # 第一名
+    1:
+      # 公会贡献
+      guildMoney: 2000
+      # 公会活跃
+      guildActive: 2000
+      # 玩家贡献
+      playerMoney: 2000

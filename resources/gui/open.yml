@@ -1,0 +1,110 @@
+title: "&0公会列表"
+
+# 介绍信息
+info:
+  # 是否开启显示
+  enable: true
+  # 坐标
+  index: 4
+  # 显示内容
+  name: "      &8[&e公会介绍&8]"
+  # 显示物品材质
+  material: PAINTING
+  #是否附魔效果
+  isEnchant: false
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 显示物品lore
+  lore:
+    - '&8▪ &7加入公会 共创世界'
+    - '&8▪ &7公会贡献 公会商店'
+    - '&8▪ &7雄鹰不为暴风折翼'
+    - '&8▪ &7狼群不因长夜畏惧'
+    - '&8▪ &7你不是一个人在战斗'
+
+# 我的公会,没有公会的时候不会显示
+me:
+  enable: true
+  index: 49
+  name: "   &8[&e我的公会&8]"
+  material: PLAYER_HEAD
+  isEnchant: false
+  custom-model-data: 0
+  lore:
+    - "&f- &7查看我的公会"
+
+# 创建公会提醒-没有公会时候显示 务必index值跟me的index保持一致
+create:
+  enable: true
+  index: 49
+  name: "   &8[&e创建公会&8]"
+  material: PLAYER_HEAD
+  isEnchant: false
+  custom-model-data: 0
+  lore:
+    - "&f- &7点击创建公会"
+  nameMsg: " &8[&a✔&8] &7请在聊天框输入&a公会名，&7输入 &aT &7退出操作"
+  cancelMsh: "&8[&a✔&8] &7操作已取消"
+
+# 公会列表设置 变量列表
+# 工会名:${guild_name} 活跃:${prosperity_degree} 会长:${guild_owner}
+# 公会资金:${guild_money} 公会当前人数:${guild_member_count} 公会总人数:${guild_max_member_count}
+# 公会创建时间${guild_creation_time} 公会创建人${guild_creator}
+guild:
+  name: '             &8[&7${guild_name}&8]'
+  isEnchant: false
+  lore:
+    - '&8▪ &7会长 &e ${guild_owner}'
+    - '&8▪ &7等级 &e ${guild_level}'
+    - '&8▪ &7活跃 &e ${prosperity_degree}'
+    - '&8▪ &7资金 &e ${guild_money}'
+    - '&8▪ &7人数 &e ${guild_member_count} / ${guild_max_member_count}'
+    - '&8▪ &7创于 &e ${guild_creation_time}'
+    - '&a&m一一一一一一一一一一一一'
+    - '        ${button}        '
+    - '&a&m一一一一一一一一一一一一'
+
+view: "&8▪ &7点击 &a查看"
+noView: "&8▪ &7无权 &a操作"
+join: "&8▪ &7点击 &a加入"
+apply: "&8▪ &a申请加入中"
+
+# 上一页
+previousPage:
+  enable: true
+  index: 47
+  name: "    &8[&a上一页&8]"
+  lore:
+    - '&8▪ &7点击打开上一页'
+    - '&8▪ &7当前页码 &a${pageNum}'
+    - '&8▪ &7总页码数 &a${count}'
+  # 材质
+  material: PAPER
+  isEnchant: false
+  custom-model-data: 0
+
+# 下一页
+nextPage:
+  enable: true
+  index: 51
+  name: "    &8[&a下一页&8]"
+  lore:
+    - '&8▪ &7点击打开下一页'
+    - '&8▪ &7当前页码 &a${pageNum}'
+    - '&8▪ &7总页码数 &a${count}'
+  # 材质
+  material: PAPER
+  isEnchant: false
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,5,6,7,8,9,18,27,36,45,17,26,35,44,46,48,50,52,53
+  material: black_stained_glass_pane
+  isEnchant: false
+  name: "        &8[&7分割板&8]"
+  lore:
+    - "&7哎呀,不要随便戳人家啦"
+  custom-model-data: 0

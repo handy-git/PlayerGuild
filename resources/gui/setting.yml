@@ -1,0 +1,185 @@
+# gui标题
+title: "&0公会管理"
+
+# 公会介绍
+menu:
+  enable: true
+  index: 4
+  isEnchant: false
+
+# 升级
+up:
+  enable: true
+  index: 20
+  name: "      &8[&a公会升级&8]"
+  material: BEACON
+  isEnchant: true
+  lore:
+    - ''
+    - "&f- &7点击进行公会升级"
+    - ''
+    - '&8▪ &7公会当前等级 &a#${level} &7级'
+    - '&8▪ &7升级需要 &a${upMoney} &7资金'
+    - '&8▪ &7当前拥有 &a${guildMoney} &7资金'
+    - '&8▪ &7升级需要 &a${upProsperityDegree} &7活跃'
+    - '&8▪ &7当前拥有 &a${guildProsperityDegree} &7活跃'
+    - ''
+    - '${button}'
+  custom-model-data: 0
+  yesButton: " &8[&a✔&8] &7点击进行升级"
+  noButton: " &8[&c✘&8] &7升级条件不满足"
+  maxLevel: "&8[&c✘&8] &7升级已满级"
+
+# 改名
+editName:
+  enable: true
+  index: 21
+  isEnchant: false
+  name: "      &8[&a公会改名&8]"
+  material: OAK_SIGN
+  lore:
+    - ''
+    - "&f- &7点击修改公会名称"
+    - ''
+    - '&8▪ &7需要支付 &a${price} &7资金'
+    - '&8▪ &7当前拥有 &a${guildMoney} &7资金'
+    - ''
+    - '${button}'
+  custom-model-data: 0
+  # 需要贡献
+  price: 1000
+  yesButton: " &8[&a✔&8] &7点击修改公会名"
+  okButton: " &8[&a✔&8] &7修改公会名成功，新名称: ${guildName}"
+  noButton: " &8[&c✘&8] &7没有足够资金操作"
+
+# 邀请成员
+invitation:
+  enable: true
+  index: 22
+  name: "     &8[&a邀请成员&8]"
+  material: PLAYER_HEAD
+  isEnchant: false
+  lore:
+    - "&f- &7点击可邀请在线玩家加入"
+  custom-model-data: 0
+
+# logo商城
+logoShop:
+  enable: true
+  index: 23
+  name: "     &8[&a公会LOGO商城&8]"
+  material: CHEST
+  isEnchant: false
+  lore:
+    - "&f- &7点击前往公会logo商城"
+  custom-model-data: 0
+
+# logo仓库
+logoWarehouse:
+  enable: true
+  index: 24
+  name: "     &8[&a公会LOGO仓库&8]"
+  material: ENDER_CHEST
+  isEnchant: false
+  lore:
+    - "&f- &7点击查看公会已有LOGO"
+  custom-model-data: 0
+
+# 审批
+apply:
+  enable: true
+  index: 29
+  name: "     &8[&a公会审批&8]"
+  material: REDSTONE_TORCH
+  isEnchant: false
+  lore:
+    - "&f- &7点击查看申请列表"
+  custom-model-data: 0
+
+# 主城
+setSpawn:
+  enable: true
+  index: 30
+  name: "   &8[&a设置公会主城&8]"
+  material: CLOCK
+  isEnchant: false
+  lore:
+    - "&f- &7点击设置公会主城"
+  custom-model-data: 0
+
+# pvp管理
+pvp:
+  enable: true
+  index: 31
+  name: "   &8[&a设置成员PVP&8]"
+  material: iron_sword
+  isEnchant: false
+  lore:
+    - ''
+    - '&8▪ 当前状态 &8[${pvpStatus}&8]'
+    - ''
+    - '&8▪ &7需支付 &a${price} &7公会资金'
+    - '&8▪ &7你拥有 &a${money} &7公会资金'
+    - ''
+    - ' &8[&a✔&8] &7点击切换'
+  custom-model-data: 0
+  price: 100
+  yesPvp: "&a开启PVP"
+  noPvp: "&c禁止PVP"
+
+# 创建公会基地
+createGuildWorld:
+  enable: true
+  index: 32
+  name: "    &8[&a创建公会基地&8]"
+  material: END_PORTAL_FRAME
+  isEnchant: false
+  lore:
+    - '${button}'
+  custom-model-data: 0
+  createButton: "&f- &7点击创建公会世界"
+  haveButton: " &f- &7你已拥有公会世界"
+
+# 传送基地 index请保持和createGuildWorld节点一致
+tpGuildWorld:
+  enable: true
+  index: 32
+  name: "   &8[&a回到公会世界&8]"
+  material: END_PORTAL_FRAME
+  isEnchant: false
+  lore:
+    - "&f- &7点击回到公会世界"
+  custom-model-data: 0
+
+# 解散
+dissolution:
+  enable: true
+  index: 33
+  name: "   &8[&4解散公会&8]"
+  material: GUNPOWDER
+  isEnchant: false
+  lore:
+    - "&f- &7点击解散公会"
+  custom-model-data: 0
+
+# 返回按钮
+back:
+  enable: true
+  index: 49
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0
+
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,5,6,7,8,9,18,27,36,45,17,26,35,44,53,46,47,48,50,51,52
+  material: BLACK_STAINED_GLASS_PANE
+  isEnchant: false
+  name: "        &8[&7分割板&8]"
+  lore:
+    - "&7哎呀,不要随便戳人家啦"
+  custom-model-data: 0

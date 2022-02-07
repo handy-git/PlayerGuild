@@ -1,0 +1,37 @@
+# 称号buff状态 true 进行清理 false不处理
+playerTitleBuff: true
+playerTitleBuffOnMsg: "&8[&a✔&8] &7称号buff 恢复"
+playerTitleBuffOffMsg: "&8[&a✔&8] &7称号buff 隐藏"
+
+# 玩家种族加成 true 进行清理 false不处理
+playerRaceBuff: true
+playerRaceBuffOnMsg: "&8[&a✔&8] &7种族之力 恢复"
+playerRaceBuffOffMsg: "&8[&a✔&8] &7种族之力 隐藏"
+
+# 药水加成 true 进行清理 false不处理
+potionEffectBuff: true
+potionEffectBuffOnMsg: "&8[&a✔&8] &7药水加成 移除"
+
+# 公平装备-统一皮革套 mc1.9+开始生效
+equipment: true
+
+# 公会战状态禁止使用的指令
+disabledCommand: true
+
+# 禁止飞行
+banFly: true
+
+# 公会战开始后强制玩家执行的命令 (例如收回宠物或者使用指令取消其他加成)
+performCommand:
+  # 是否开启 true开启
+  enable: false
+  # 要执行的命令 可使用变量 ${player}代表玩家名
+  # 前面加 [Console] 代表控制台执行命令
+  command:
+    - "psa"
+
+# 公会战禁止命令提醒
+disabledCommandMsg: "&a正在进行公会战,你无法使用该命令"
+# 数据库备份装备还原提醒
+noItem: "&a该玩家没有可还原的装备"
+restore: "&a该玩家备份装备已放在你背包"

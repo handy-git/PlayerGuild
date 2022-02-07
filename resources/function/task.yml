@@ -1,0 +1,194 @@
+# 公会任务需要前置插件 PlayerTask
+title: "&0公会任务"
+
+# 是否启用 true开启，false关闭
+enable: true
+
+# plk的任务id，这些任务会被添加到公会每周集体任务中
+# 初始化0为不使用 如果要使用自己改
+# 只会使用plk的任务目标和进度系统，奖励系统为公会插件自己发
+taskId:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+
+# 每个任务的信息单独展示配置 taskId要跟上面对应
+guildTask:
+  # taskId
+  1:
+    # gui中的坐标
+    index: 20
+    # 材质
+    material: PAPER
+    # 公会任务名称
+    name: "&a公会任务 * ${taskName}"
+    # 自定义模型材质 1.14+生效 0为不生效
+    custom-model-data: 0
+    # 公会任务lore ${taskSchedule} 为任务进度
+    lore:
+      - ''
+      - '&f[ &c任务目标 &f]'
+      - ''
+      - '&c&l>> &a${taskSchedule}'
+      - ''
+      - '&f[ &c任务奖励 &f]'
+      - ''
+      - '&c&l>> &a公会资金 -> 1000'
+      - '&c&l>> &a公会活跃 -> 1000'
+    reward:
+      # 公会资金
+      guildMoney: 1000
+      # 公会活跃
+      guildProsperityDegree: 1000
+  2:
+    index: 21
+    material: PAPER
+    name: "&a公会任务 * ${taskName}"
+    custom-model-data: 0
+    lore:
+      - ''
+      - '&f[ &c任务目标 &f]'
+      - ''
+      - '&c&l>> &a${taskSchedule}'
+      - ''
+      - '&f[ &c任务奖励 &f]'
+      - ''
+      - '&c&l>> &a公会资金 -> 1000'
+      - '&c&l>> &a公会活跃 -> 1000'
+    reward:
+      guildMoney: 1000
+      guildProsperityDegree: 1000
+  3:
+    index: 22
+    material: PAPER
+    name: "&a公会任务 * ${taskName}"
+    custom-model-data: 0
+    lore:
+      - ''
+      - '&f[ &c任务目标 &f]'
+      - ''
+      - '&c&l>> &a${taskSchedule}'
+      - ''
+      - '&f[ &c任务奖励 &f]'
+      - ''
+      - '&c&l>> &a公会资金 -> 1000'
+      - '&c&l>> &a公会活跃 -> 1000'
+    reward:
+      guildMoney: 1000
+      guildProsperityDegree: 1000
+  4:
+    index: 23
+    material: PAPER
+    name: "&a公会任务 * ${taskName}"
+    custom-model-data: 0
+    lore:
+      - ''
+      - '&f[ &c任务目标 &f]'
+      - ''
+      - '&c&l>> &a${taskSchedule}'
+      - ''
+      - '&f[ &c任务奖励 &f]'
+      - ''
+      - '&c&l>> &a公会资金 -> 1000'
+      - '&c&l>> &a公会活跃 -> 1000'
+    reward:
+      guildMoney: 1000
+      guildProsperityDegree: 1000
+  5:
+    index: 24
+    material: PAPER
+    name: "&a公会任务 * ${taskName}"
+    custom-model-data: 0
+    lore:
+      - ''
+      - '&f[ &c任务目标 &f]'
+      - ''
+      - '&c&l>> &a${taskSchedule}'
+      - ''
+      - '&f[ &c任务奖励 &f]'
+      - ''
+      - '&c&l>> &a公会资金 -> 1000'
+      - '&c&l>> &a公会活跃 -> 1000'
+    reward:
+      guildMoney: 1000
+      guildProsperityDegree: 1000
+
+# 每周日晚上23:00发奖励
+rewardMsg: "&8[&a✔&8] &7公会任务${taskName}结算，奖励公会资金:${guildMoney},公会活跃:${guildProsperityDegree}"
+# 每周一早上01:00刷新任务
+refreshMsg: "&8[&a✔&8] &7本周公会任务刷新了，为了公会肝起来吧!"
+
+# 不建议更改该值,只用来测试奖励时候修改
+# 公会任务结算星期，1-7
+startDate: 7
+# 公会任务结算时间,24小时制
+startTime: "23:00"
+
+# 介绍按钮
+info:
+  # 是否开启显示
+  enable: true
+  # 坐标
+  index: 4
+  # 显示内容
+  name: "      &8[&e任务介绍&8]"
+  # 显示物品材质
+  material: PAINTING
+  #是否附魔效果
+  isEnchant: false
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 显示物品lore
+  lore:
+    - '&8▪ &7任务每周末&a23:00&7结算'
+    - '&8▪ &7次日凌晨&a1:00&7刷新任务'
+    - '&8▪ &7任务为公会全员一起完成'
+
+# 返回按钮
+back:
+  enable: true
+  index: 49
+  material: barrier
+  name: "   &8[&a返回&8]"
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0
+
+# 上一页
+previousPage:
+  enable: true
+  index: 47
+  name: "    &8[&a上一页&8]"
+  lore:
+    - '&8▪ &7点击打开上一页'
+    - '&8▪ &7当前页码 &a${pageNum}'
+    - '&8▪ &7总页码数 &a${count}'
+  # 材质
+  material: PAPER
+  custom-model-data: 0
+
+# 下一页
+nextPage:
+  enable: true
+  index: 51
+  name: "    &8[&a下一页&8]"
+  lore:
+    - '&8▪ &7点击打开下一页'
+    - '&8▪ &7当前页码 &a${pageNum}'
+    - '&8▪ &7总页码数 &a${count}'
+  # 材质
+  material: PAPER
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+
+# 分隔板
+pane:
+  enable: true
+  index: 0,1,2,3,5,6,7,8,9,18,27,36,45,17,26,35,44,46,48,50,52,53
+  material: BLACK_STAINED_GLASS_PANE
+  name: "        &8[&7分割板&8]"
+  lore:
+    - "&7哎呀,不要随便戳人家啦"
+  custom-model-data: 0

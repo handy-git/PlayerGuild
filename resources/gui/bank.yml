@@ -1,0 +1,119 @@
+# gui标题
+title: "&0公会银行"
+
+# 介绍按钮
+info:
+  # 是否开启显示
+  enable: true
+  # 坐标
+  index: 4
+  # 显示内容
+  name: "      &8[&e公会银行介绍&8]"
+  # 显示物品材质
+  material: PAINTING
+  #是否附魔效果
+  isEnchant: false
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 显示物品lore
+  lore:
+    - ''
+    - '&8▪ &7公会有 &a${money} &7资金'
+    - ''
+    - '&8▪ &7捐赠玩家贡献给公会资金'
+    - '&8▪ &7会长可以使用资金'
+    - '&8▪ &7进行公会升级操作等'
+
+# 小额捐赠
+small:
+  # 是否使用
+  enable: true
+  # 在gui中的坐标
+  index: 10
+  # 在gui中的材质名称
+  material: GOLD_NUGGET
+  # 是否附魔效果
+  isEnchant: false
+  # 在gui中的名称
+  name: "   &8[&5ℑ&8] ▪ &8[&d小额捐赠&8]"
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 在gui中的lore
+  lore:
+    - ''
+    - '&8▪ &7小额捐赠给公会银行'
+    - ''
+    - '&8▪ &7需捐赠 &a${price} &7公会贡献'
+    - '&8▪ &7你拥有 &a${money} &7公会贡献'
+    - ''
+    - '${button}'
+  # 价格
+  price: 100
+
+# 大额捐赠
+big:
+  enable: true
+  index: 12
+  material: GOLD_INGOT
+  isEnchant: false
+  name: "   &8[&5ℑ&8] ▪ &8[&d大额捐赠&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7大额捐赠给公会银行'
+    - ''
+    - '&8▪ &7需捐赠 &a${price} &7公会贡献'
+    - '&8▪ &7你拥有 &a${money} &7公会贡献'
+    - ''
+    - '${button}'
+  price: 1000
+
+# 全部捐赠
+all:
+  enable: true
+  index: 14
+  material: GOLD_BLOCK
+  isEnchant: false
+  name: "   &8[&5ℑ&8] ▪ &8[&d全额捐赠&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7全部贡献给公会银行'
+    - ''
+    - '&8▪ &7你拥有 &a${money} &7公会贡献'
+    - ''
+    - '${button}'
+
+# 自定义捐赠
+custom:
+  enable: true
+  index: 16
+  material: GOLD_BLOCK
+  isEnchant: false
+  name: "   &8[&5ℑ&8] ▪ &8[&d自定义捐赠&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7点击该按钮后聊天框输入捐赠数量'
+    - ''
+    - '&8▪ &7你拥有 &a${money} &7公会贡献'
+    - ''
+    - '${button}'
+  customMsg: "&8[&a✔&8] &7请在聊天框输入&a整数捐赠金额，&7输入 &aT &7退出操作"
+
+# ${button}对应的变量
+yesButton: " &8[&a✔&8] &7点击进行捐赠"
+noButton: " &8[&c✘&8] &7你的贡献不足"
+
+# 返回按钮
+back:
+  enable: true
+  index: 22
+  name: "   &8[&a返回&8]"
+  material: barrier
+  isEnchant: false
+  lore:
+    - '&f- &7点击返回'
+  custom-model-data: 0
+
+succeedMsg: "&a捐赠成功"

@@ -1,0 +1,119 @@
+# 没权限时候提醒
+noPermission: "&c你没有权限执行此命令..."
+
+# 重载插件提醒
+reloadMsg: "&a公会重载完毕..."
+
+# placeholderAPI提醒
+placeholderAPISucceedMsg: "&a已成功加载placeholderApi"
+placeholderAPIFailureMsg: "&7你的服务端没有安装PlaceholderApi哦 未启用自定义变量功能."
+
+# playerTitle提醒
+playerTitleSucceedMsg: "&a已成功加载PlayerTitle 启用公会称号功能."
+playerTitleFailureMsg: "&7你的服务端没有安装PlayerTitle 未启用公会称号功能."
+
+# playerTask提醒
+playerTaskSucceedMsg: "&a已成功加载playerTask 启用公会任务功能."
+playerTaskFailureMsg: "&7你的服务端没有安装playerTask 未启用公会任务功能."
+
+# playerRace提醒
+playerRaceSucceedMsg: "&a已成功加载playerRace 兼容种族功能."
+playerRaceFailureMsg: "&7你的服务端没有安装playerRace 未兼容种族功能."
+
+# multiverseCore提醒
+multiverseCoreSucceedMsg: "&a已成功加载MultiverseCore 启用公会基地功能."
+multiverseCoreFailureMsg: "&7你的服务端没有安装MultiverseCore 未启用公会基地功能."
+
+# worldBorder提醒
+worldBorderSucceedMsg: "&a已成功加载WorldBorder 启用公会基地边境功能."
+worldBorderFailureMsg: "&7你的服务端没有安装WorldBorder 未启用公会基地边境功能."
+
+# vault提醒
+vaultSucceedMsg: "&a已成功加载Vault 启用经济相关功能."
+vaultFailureMsg: "&7你的服务端没有安装Vault 未启用经济相关功能."
+
+# PlayerPoints提醒
+playerPointsSucceedMsg: "&a已成功加载PlayerPoints 启用点券相关功能."
+playerPointsFailureMsg: "&7你的服务端没有安装PlayerPoints 未启用点券相关功能."
+
+# /plg help指令管理员出现的提醒
+helps:
+  - ""
+  - " &3Player&bGuild &8&l▪ &7米饭出品～"
+  - ""
+  - " &7命令: &f/Plg &8[...]"
+  - " &7参数:"
+  - "   &8&l- &f reload   &7重载配置文件"
+  - "   &8&l- &f create &8[&7公会名&8]   &7创建一个公会"
+  - "   &8&l- &f open   &7打开公会界面"
+  - "   &8&l- &f view &8[&7类型&8]    &7管理员进行查看信息"
+  - "   &8&l- &f setLocation &8[&7类型&8] &8[&7场地名&8] &8[&7场地出生点名&8] &7设置公会战场地"
+  - "   &8&l- &f addShop &8[&7价格&8] (&7等级&8) (&7次数&8)   &7手持物品上架到公会商城"
+  - "   &8&l- &f addLogo &8[&7价格&8] (&7等级&8)   &7手持物品上架到公会Logo商城"
+  - "   &8&l- &f restore &8[&7玩家名&8]    &7用于蹦服等特殊情况获取玩家备份物品"
+  - "   &8&l- &f give [类型][名称][数量]    &7增加贡献"
+  - "   &8&l- &f take [类型][名称][数量]    &7减少贡献"
+  - "   &8&l- &f set [类型][名称][数量]   &7设置贡献"
+  - "   &8&l- &f refresh    &7刷新,用于修复公会没任务或者没称号"
+  - "   &8&l- &f dissolve [名称]  &7强制解散指令名称的公会"
+  - "   &8&l- &f setEquipment (装备位置)  &7设置手上物品为公平公会战物品"
+
+succeedMsg: "&a命令执行成功."
+failureMsg: "&c命令执行失败."
+noPlayerFailureMsg: "&c该命令只能玩家执行."
+noAir: "&c你的手上并没有物品."
+typeFailureMsg: "&c类型错误."
+paramFailureMsg: "&c参数错误."
+amountFailureMsg: "&7此参数只能为大于0的数字."
+noGuildMsg: "&4没有公会."
+noGuildSpawnLocationMsg: "&c会长没有设置公会基地."
+waitTime: "&7你必须等待 &a${waitTime} &7秒后 才可以继续使用该功能."
+delayTime: "&7传送将在 &a${delayTime} &7秒后开始."
+spawnMove: "&7你移动了位置 传送被取消了."
+
+upMoney: "&7升级资金不足."
+upProsperityDegree: "&7公会活跃度不足 不能升级."
+welcomeTitle: "&7欢迎 ${player} 来到公会世界."
+oneLeaveMsg: "&7你是会长不能离开公会"
+leaveMsg: "&7你离开了 &8[&7${guild_name}&8] &7公会."
+joinFailureMsg: "&7没有对应的公会."
+joinApplyMsg: "&7已申请加入 &8[&7${guild_name}&8] &7公会 请耐心等待审批通过."
+haveApplied: "&7你已经申请加入该公会了 请耐心等待审批通过."
+joinApplyNoticeMsg: "&7玩家 &8[&a${player}&8] &7申请加入公会."
+joinApplyCancelMsg: "&7玩家 &8[&a${player}&8] &7取消申请加入公会."
+joinApplyRefuseMsg: "&7管理员 &8[&a${player}&8] &7拒绝了你的申请."
+joinApplyAcceptMsg: "&7管理员 &8[&a${player}&8] &7同意了你的申请."
+accept: "&8[&a点击接受&8]    "
+refuse: "&r      &8[&c点击拒绝&8]"
+refuseFailureMsg: "&a已经被 ${applyPlayerName} 审批过了."
+refuseSucceedMsg: "&7已拒绝玩家 &8[&a${player}&8] &7的申请."
+acceptSucceedMsg: "&7已同意玩家 &8[&a${player}&8] &7的申请."
+numberFailureMsg: "&7公会人数已满 无法加入此公会."
+noApply: "&7公会没有加入申请."
+noJoinGuildWorld: "&7你不能进入其他公会的世界."
+joinCoolingMsg: "&8[&c✘&8] &7申请失败，你还需要等待${time}小时才能申请加入公会"
+noGuildRemind: "&8[&a✔&8] &a你还没有公会,&8[&a点击申请加入&8]"
+
+noPvpMsg: "&8[&c✘&8] &7当前没有正在进行的比赛"
+
+# 权限配置
+role:
+  one: "&8[&c♚&8] &d会长"
+  two: "&8[&c♕&8] &e副会"
+  three: "&8[&c♝&8] &a精英"
+  four: "&8[&7♟&8] &b成员"
+
+# 活动类型
+activityType:
+  season: "&a赛季公会战"
+  match: "&a匹配公会战"
+
+# 用于输入指令时候tab自动提醒帮助(只建议翻译,不建议更改)
+tabHelp:
+  guildName: "&7请输入公会名称,可使用颜色代码&"
+  price: "&7请输入需要贡献值."
+  pvpName: "&7请输入pvp场地名."
+  spawnName: "&7请输入场地出生点名."
+  number: "&7请输入一个整数"
+  level: "&7请输入可购买的公会等级"
+  limit: "&7请输入可购买次数"

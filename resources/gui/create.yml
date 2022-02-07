@@ -1,0 +1,67 @@
+# gui标题
+title: "&0创建公会"
+
+# 点券
+point:
+  # 是否使用
+  enable: true
+  # 在gui中的坐标
+  index: 11
+  # 在gui中的材质名称
+  material: DIAMOND
+  # 是否附魔效果
+  isEnchant: true
+  # 在gui中的名称
+  name: "   &8[&5ℑ&8] ▪ &8[&d点券创建&8]"
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
+  # 在gui中的lore
+  lore:
+    - ''
+    - '&8▪ &7创建公会所需费用'
+    - ''
+    - '&8▪ &7需支付 &a${price} &7点券'
+    - '&8▪ &7你拥有 &a${money} &7点券'
+    - ''
+    - '${button}'
+  # 价格
+  price: 150
+
+# 金币
+vault:
+  enable: true
+  index: 15
+  material: GOLD_INGOT
+  isEnchant: false
+  name: "   &8[&6ℑ&8] ▪ &8[&e金币创建&8]"
+  custom-model-data: 0
+  lore:
+    - ''
+    - '&8▪ &7创建公会所需费用'
+    - ''
+    - '&8▪ &7需支付 &a${price} &7金币'
+    - '&8▪ &7你拥有 &a${money} &7金币'
+    - ''
+    - '${button}'
+  price: 10000
+
+# ${button}对应的变量
+yesButton: " &8[&a✔&8] &7点击进行支付"
+noButton: " &8[&c✘&8] &7你的余额不足"
+
+# 名称黑名单
+nameBlackList:
+  - "草"
+  - "傻"
+  - "服主"
+
+# 创建提醒语言文件
+notMoneyFailureMsg: "&c你的余额不足 创建公会失败"
+# 公会名长度，算颜色代码
+guildNameLength: 6
+colorFailureMsg: "&4你没有 &aplayerguild.create.color &4权限来创建彩色名称的公会"
+lengthFailureMsg: "&4公会名过长 请限制在 &a${length} &7之内."
+nameBlackListFailureMsg: "&4公会名包含非法字符 &a${name}"
+duplicateName: "&4公会名已经被使用."
+haveGuild: "&c你已经有一个公会了."
+createSucceedMsg: "&a公会创建成功."
