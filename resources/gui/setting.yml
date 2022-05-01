@@ -28,7 +28,7 @@ up:
   custom-model-data: 0
   yesButton: " &8[&a✔&8] &7点击进行升级"
   noButton: " &8[&c✘&8] &7升级条件不满足"
-  maxLevel: "&8[&c✘&8] &7升级已满级"
+  maxLevel: "&8[&c✘&8] &7公会已满级"
 
 # 改名
 editName:
@@ -135,6 +135,9 @@ createGuildWorld:
   material: END_PORTAL_FRAME
   isEnchant: false
   lore:
+    - ''
+    - '&8▪ 会长有权限创建'
+    - ''
     - '${button}'
   custom-model-data: 0
   createButton: "&f- &7点击创建公会世界"

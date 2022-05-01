@@ -1,4 +1,4 @@
-# gui标题
+# gui标题-修改标题需重启
 title: "&0公会活动"
 
 # 赛季公会战
@@ -87,6 +87,9 @@ matePvpSubTitleMsg: "&a倒计时 ➜ &a#${time}"
 matePvpSubTitleSTartMsg: "&a公会战正式开始"
 noPlayer: "&c参赛人数不足 已取消本次公会战"
 
+# 匹配公会战时间-超时会自动扣血 (设置为0是关闭该功能)
+matePvpTime: 300
+matePvpTimeMsg: "&8[&c!&8] &a你中毒了，原因:你战斗太久了！"
 # 公会战结束提醒
 matePvpFinishSubTitleMsg: "&7公会战获胜方 &a${win} &7公会战失败方 &c${fail}"
 # 公会战结束全服提醒(留空代表不发消息)
@@ -98,10 +101,16 @@ matePvpWinMsg: "&7公会战挑战胜利 你获得了胜利奖励 &8[&a贡献×${
 matePvpFail: 10
 matePvpFailMsg: "&7公会战挑战失败 你获得了参与奖励 &8[&a贡献×${money}&8]"
 
+# 公会战开始匹配的发送通知消息
+mateNotice:
+  # 范围 不发 not , 只有接收 op , 全部玩家 all
+  range: "all"
+  msg: "&8[&c!&8] &a${guildName} &f公会&a向各大公会&7发起了&a公会匹配战 &e速来参与!"
+
 # 公会战开始后的发送通知消息
 notice:
-  # 范围 不发 not , 只有op接收 op , 全部玩家 all
-  range: "op"
+  # 范围 不发 not , 只有有权限匹配的接收 permission , 全部玩家 all
+  range: "all"
   msg: "&a${one} &fVS &c${two} &f匹配公会战开始了！"
 
 # 赛季公会战

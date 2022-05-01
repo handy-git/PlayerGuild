@@ -65,3 +65,5 @@ nameBlackListFailureMsg: "&4公会名包含非法字符 &a${name}"
 duplicateName: "&4公会名已经被使用."
 haveGuild: "&c你已经有一个公会了."
 createSucceedMsg: "&a公会创建成功."
+# 公会创建后的发送全服通知消息，留空不发
+createSucceedAllMsg: "&8[&a✔&8] &7恭喜玩家&a${player}&7创建了&a${name}&7公会"

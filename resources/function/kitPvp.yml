@@ -18,6 +18,12 @@ equipment: true
 # 公会战状态禁止使用的指令
 disabledCommand: true
 
+# 公会战开战后默认最大血量
+maxHealth:
+  # 是否开启 true开启
+  enable: false
+  health: 20
+
 # 禁止飞行
 banFly: true
 
@@ -28,7 +34,7 @@ performCommand:
   # 要执行的命令 可使用变量 ${player}代表玩家名
   # 前面加 [Console] 代表控制台执行命令
   command:
-    - "psa"
+    - "[Console] psa ${player}"
 
 # 公会战禁止命令提醒
 disabledCommandMsg: "&a正在进行公会战,你无法使用该命令"

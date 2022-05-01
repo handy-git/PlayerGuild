@@ -57,6 +57,8 @@ helps:
   - "   &8&l- &f refresh    &7刷新,用于修复公会没任务或者没称号"
   - "   &8&l- &f dissolve [名称]  &7强制解散指令名称的公会"
   - "   &8&l- &f setEquipment (装备位置)  &7设置手上物品为公平公会战物品"
+  - "   &8&l- &f start  &7立即开始赛季公会战"
+  - "   &8&l- &f convert [MySQL|SQLite]  &7转换数据"
 
 succeedMsg: "&a命令执行成功."
 failureMsg: "&c命令执行失败."
@@ -91,10 +93,9 @@ acceptSucceedMsg: "&7已同意玩家 &8[&a${player}&8] &7的申请."
 numberFailureMsg: "&7公会人数已满 无法加入此公会."
 noApply: "&7公会没有加入申请."
 noJoinGuildWorld: "&7你不能进入其他公会的世界."
-joinCoolingMsg: "&8[&c✘&8] &7申请失败，你还需要等待${time}小时才能申请加入公会"
+joinCoolingMsg: "&8[&c✘&8] &7申请失败，你还需要等待&a${time}小时&7才能申请加入公会"
 noGuildRemind: "&8[&a✔&8] &a你还没有公会,&8[&a点击申请加入&8]"
-
-noPvpMsg: "&8[&c✘&8] &7当前没有正在进行的比赛"
+noGuildSeason: "&8[&a✔&8] &7公会还没有参加赛季公会战,&8[&a点击参加&8]"
 
 # 权限配置
 role:
@@ -102,6 +103,7 @@ role:
   two: "&8[&c♕&8] &e副会"
   three: "&8[&c♝&8] &a精英"
   four: "&8[&7♟&8] &b成员"
+  not: "&7无职位"
 
 # 活动类型
 activityType:

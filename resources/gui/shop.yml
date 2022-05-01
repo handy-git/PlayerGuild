@@ -1,14 +1,23 @@
 # gui标题
 title: "&0公会商店"
 
-yesButton: " &8[&a✔&8] &7点击进行购买"
-limitButton: " &8[&a✔&8] &7点击购买,可买&a${number}&7次"
+yesButton: " &8[&a✔&8] &a点击进行购买"
+limitButton: " &8[&a✔&8] &a点击购买,&7可买&a${number}&7次"
 noLimitButton: " &8[&a✘&8] &7购买次数不足"
 noButton: " &8[&c✘&8] &7你的余额不足"
 levelButton: " &8[&c✘&8] &7公会 &a${level} &7级可购买"
 delButton: " &8[&c✔&8] &7点击删除此物品"
+noSell: " &8[&a✔&8] &a点击下架此物品"
+noSellMsg: "&8[&a✔&8] &a商店下架成功"
 buyMsg: " &8[&a✔&8] &7购买成功"
 unlimited: "&a无限制"
+sellMsg: "&8[&a✔&8] &7请&a主手拿&7上架物品，&7输入 &a数量:单价 &7确定上架,例如 &a1#100，&7输入 &aT &7退出操作"
+sellErrorOneMsg: "&8[&c✘&8] &4输入格式错误！&7请输入 &a数量#单价 &7确定上架,例如 &a1#100，&7输入 &aT &7退出操作"
+sellErrorItemMsg: "&8[&c✘&8] &4你主手没有物品！&7请输入 &a数量#单价 &7确定上架,例如 &a1#100，&7输入 &aT &7退出操作"
+sellErrorNumberMsg: "&8[&c✘&8] &4你没有足够的数量！&7请输入 &a数量#单价 &7确定上架,例如 &a1#100，&7输入 &aT &7退出操作"
+sellErrorPriceMsg: "&8[&c✘&8] &4价格必须大于0的整数！&7请输入 &a数量#单价 &7确定上架,例如 &a1#100，&7输入 &aT &7退出操作"
+sellYesMsg: "&8[&a✔&8] &a商品上架成功，&7继续输入 &a数量:单价 &7上架下一个物品,例如 &a1#100，&7输入 &aT &7退出操作"
+sellBuyMsg: "&8[&a✔&8] &7成员&a${player}&7购买了你上架的&a${item},&7你获得&a${money}&7贡献"
 
 # 显示内容
 logo:
@@ -32,6 +41,21 @@ logo:
     - '&8▪ &7需支付 &a${price} &7公会贡献'
     - ''
     - '${button}'
+  sell:
+    - ''
+    - '&8▪ &7上架人: &a${playerName}'
+
+# 会长出售按钮
+sell:
+  enable: true
+  index: 40
+  material: HOPPER
+  isEnchant: false
+  name: "   &8[&a上架商品&8]"
+  lore:
+    - '&f- &7点击上架商品到公会商城'
+    - '&f- &7出售贡献给予上架人'
+  custom-model-data: 0
 
 # 返回按钮
 back:

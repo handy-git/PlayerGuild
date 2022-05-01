@@ -14,6 +14,7 @@ member:
     - '&8▪ &7贡献排行 &f ${player_ranking}'
     - '&8▪ &7加入时间 &f ${player_join_time}'
     - '&8▪ &7上次登录 &f ${last_join_time}'
+    - '&8▪ &7离线时间 &f ${last_quit_time}'
   custom-model-data: 0
 
 # 返回按钮

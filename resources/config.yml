@@ -1,6 +1,7 @@
 # 本插件gui语言排版出自小羊咩咩～
 
-# 语言文件 [可选 中文简体:zh_CN;中文繁體:zh_TW;English:en_US]
+# 语言文件 [可选 中文简体:zh_CN;中文繁體:zh_TW;]
+# 第一次修改语言文件,需重启生效
 language: zh_CN
 
 # 是否开启更新提醒,建议开启
@@ -35,6 +36,9 @@ suffixBrackets: "&f]"
 # 是否开启兼容模式-变量可以在essChat中使用
 # 主要把 %playerGuild_show_name% 修改为 {playerGuild_show_name} 即可
 essChat: false
+
+# 是否开启加载公会成员头颅
+setHead: true
 
 # 公会设置 1:为等级，可以按照顺序无限扩展
 guildSetting:
@@ -109,3 +113,17 @@ guildSetting:
     upMoney: 200000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 200000
+  11:
+    # 公会人数上限
+    totalNumber: 50
+    # 公会升级需求公会资金-升级后会扣除处理
+    upMoney: 1000000
+    # 公会升级需求公会繁荣度-达标才能进行升级
+    upProsperityDegree: 1000000
+  12:
+    # 公会人数上限
+    totalNumber: 100
+    # 公会升级需求公会资金-升级后会扣除处理
+    upMoney: 10000000
+    # 公会升级需求公会繁荣度-达标才能进行升级
+    upProsperityDegree: 10000000

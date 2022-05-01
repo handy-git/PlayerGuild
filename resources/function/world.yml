@@ -15,6 +15,24 @@ difficulty: PEACEFUL
 # 是否可以pvp
 PVPMode: true
 
+# 世界规则 可查阅 https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4/gamerule
+# commandBlockOutput  启用/禁止命令执行时命令列中的进行文字提示
+# doFireTick          启用／禁止火的蔓延
+# doMobLoot			启用／禁止生物掉落物
+# doMobSpawning		启用／禁止生物生成【既有生物、刷怪蛋不受影响】
+# doTileDrops			启用／禁止方块被任何方式破坏时掉落物品【包括TNT破坏的】
+# keepInventory		启用／禁止死亡后对物品栏的保存
+# mobGriefing			启用／禁止所有怪物对方块的破坏【包含苦力怕、安德、地狱幽灵、凋零怪】【TNT不在此限】
+# naturalRegeneration 启用/禁用自然生命恢复
+# doDaylightCycle     启用/禁用日夜交替【关闭的话时间会停止】
+gameRule:
+  # 要设置为true的规则
+  trueFlag:
+    - 'keepInventory'
+  # 要设置为false的规则
+  falseFlag:
+    - 'mobGriefing'
+
 # 重复创建提醒
 HasBeenCreated: "&4已经创建公会世界过了 请不要重复创建."
 
