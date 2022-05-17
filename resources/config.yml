@@ -40,6 +40,9 @@ essChat: false
 # 是否开启加载公会成员头颅
 setHead: true
 
+# 公会战结束模式 default:回到玩家比赛开始前位置 lookLocation:回到观站点 spawn:回到主城
+pvpEndModel: "default"
+
 # 公会设置 1:为等级，可以按照顺序无限扩展
 guildSetting:
   # 1级
@@ -50,6 +53,10 @@ guildSetting:
     upMoney: 1000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 1000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 2
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 0
   2:
     # 公会人数上限
     totalNumber: 7
@@ -57,6 +64,10 @@ guildSetting:
     upMoney: 2000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 2000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 3
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 10
   3:
     # 公会人数上限
     totalNumber: 10
@@ -64,6 +75,10 @@ guildSetting:
     upMoney: 10000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 5000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 5
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 20
   4:
     # 公会人数上限
     totalNumber: 13
@@ -71,6 +86,10 @@ guildSetting:
     upMoney: 20000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 10000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 6
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 30
   5:
     # 公会人数上限
     totalNumber: 15
@@ -78,6 +97,10 @@ guildSetting:
     upMoney: 40000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 20000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 7
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 40
   6:
     # 公会人数上限
     totalNumber: 18
@@ -85,6 +108,10 @@ guildSetting:
     upMoney: 60000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 40000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 9
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 50
   7:
     # 公会人数上限
     totalNumber: 20
@@ -92,6 +119,10 @@ guildSetting:
     upMoney: 80000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 80000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 10
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 60
   8:
     # 公会人数上限
     totalNumber: 23
@@ -99,6 +130,10 @@ guildSetting:
     upMoney: 100000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 100000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 11
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 70
   9:
     # 公会人数上限
     totalNumber: 25
@@ -106,6 +141,10 @@ guildSetting:
     upMoney: 150000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 150000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 13
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 80
   10:
     # 公会人数上限
     totalNumber: 30
@@ -113,6 +152,10 @@ guildSetting:
     upMoney: 200000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 200000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 15
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 90
   11:
     # 公会人数上限
     totalNumber: 50
@@ -120,6 +163,10 @@ guildSetting:
     upMoney: 1000000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 1000000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 25
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 100
   12:
     # 公会人数上限
     totalNumber: 100
@@ -127,3 +174,7 @@ guildSetting:
     upMoney: 10000000
     # 公会升级需求公会繁荣度-达标才能进行升级
     upProsperityDegree: 10000000
+    # 公会升级需求成员数量-达标才能进行升级(设置为0为不限制)
+    upMember: 100
+    # 公会每日维护资金(每日00:00 按照(公会人数 * 维护资金)从公会资金里扣除,资金不足的公会掉级)
+    maintenanceMoney: 100

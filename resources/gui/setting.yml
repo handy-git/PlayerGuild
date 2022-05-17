@@ -19,10 +19,14 @@ up:
     - "&f- &7点击进行公会升级"
     - ''
     - '&8▪ &7公会当前等级 &a#${level} &7级'
+    - '&8▪ &7当前每日维护 &a${maintenanceMoney} * 人数 &7资金'
+    - '&8▪ &7升级每日维护 &a${upMaintenanceMoney} * 人数 &7资金'
     - '&8▪ &7升级需要 &a${upMoney} &7资金'
     - '&8▪ &7当前拥有 &a${guildMoney} &7资金'
     - '&8▪ &7升级需要 &a${upProsperityDegree} &7活跃'
     - '&8▪ &7当前拥有 &a${guildProsperityDegree} &7活跃'
+    - '&8▪ &7升级需要 &a${upMember} &7玩家'
+    - '&8▪ &7当前拥有 &a${guildMember} &7玩家'
     - ''
     - '${button}'
   custom-model-data: 0
@@ -126,6 +130,8 @@ pvp:
   price: 100
   yesPvp: "&a开启PVP"
   noPvp: "&c禁止PVP"
+  # pvp管理不会生效的世界
+  noWorld: [ ]
 
 # 创建公会基地
 createGuildWorld:

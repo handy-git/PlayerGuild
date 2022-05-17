@@ -73,6 +73,7 @@ waitTime: "&7你必須等待 &a${waitTime} &7秒後 才可以繼續使用該功�
 delayTime: "&7傳送將在 &a${delayTime} &7秒後開始."
 spawnMove: "&7你移動了位置 傳送被取消了."
 
+upMember: "&7升級公會人數不足."
 upMoney: "&7升級資金不足."
 upProsperityDegree: "&7公會活躍度不足 不能升級."
 welcomeTitle: "&7歡迎 ${player} 來到公會世界."
