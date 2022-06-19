@@ -20,7 +20,7 @@ public class PlayerGuildApi {
     }
 
     public static PlayerGuildApi getInstance() {
-        return PlayerGuildApi.SingletonHolder.INSTANCE;
+        return SingletonHolder.INSTANCE;
     }
 
     /**
@@ -175,7 +175,7 @@ public class PlayerGuildApi {
      * @since 1.0.2
      */
     public String getPlayerGuildName(Player player) {
-        return null;
+        return this.getPlayerGuildName(player.getName());
     }
 
     /**
@@ -197,7 +197,7 @@ public class PlayerGuildApi {
      * @since 1.0.2
      */
     public Integer getPlayerMoney(Player player) {
-        return 0;
+        return this.getPlayerMoney(player.getName());
     }
 
     /**
@@ -219,7 +219,7 @@ public class PlayerGuildApi {
      * @since 1.2.1
      */
     public List<String> getPlayerGuildMember(Player player) {
-        return new ArrayList<String>();
+        return this.getPlayerGuildMember(player.getName());
     }
 
     /**
@@ -241,7 +241,7 @@ public class PlayerGuildApi {
      * @since 1.2.1
      */
     public String getPlayerGuildRole(Player player) {
-        return null;
+        return this.getPlayerGuildRole(player.getName());
     }
 
     /**
@@ -253,6 +253,50 @@ public class PlayerGuildApi {
      */
     public String getPlayerGuildRole(String playerName) {
         return null;
+    }
+
+    /**
+     * 获取玩家公会战击杀次数
+     *
+     * @param player 玩家
+     * @return 玩家公会战击杀次数
+     * @since 1.4.6
+     */
+    public Integer getPlayerKill(Player player) {
+        return this.getPlayerKill(player.getName());
+    }
+
+    /**
+     * 获取玩家公会战击杀次数
+     *
+     * @param playerName 玩家名
+     * @return 家公会战击杀次数
+     * @since 1.4.6
+     */
+    public Integer getPlayerKill(String playerName) {
+        return 0;
+    }
+
+    /**
+     * 获取玩家公会战死亡次数
+     *
+     * @param player 玩家
+     * @return 玩家公会战死亡次数
+     * @since 1.4.6
+     */
+    public Integer getPlayerDie(Player player) {
+        return this.getPlayerDie(player.getName());
+    }
+
+    /**
+     * 获取玩家公会战死亡次数
+     *
+     * @param playerName 玩家名
+     * @return 玩家公会战
+     * @since 1.4.6
+     */
+    public Integer getPlayerDie(String playerName) {
+        return 0;
     }
 
 }

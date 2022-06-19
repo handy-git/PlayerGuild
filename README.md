@@ -11,7 +11,7 @@ PlayerGuild 插件
 
 
 #### 初始化jar
-- 下载代码中repo文件夹的PlayerGuild-1.4.4.jar
+- 下载代码中repo文件夹的PlayerGuild-1.4.6.jar
 - 或者下载releases里的jar文件导入你的项目中
 - 或者使用maven引入依赖
 
@@ -26,10 +26,9 @@ PlayerGuild 插件
 <dependency>
   <groupId>com.handy.guild</groupId>
   <artifactId>PlayerGuild</artifactId>
-  <version>1.4.4</version>
+  <version>1.4.6</version>
 </dependency>
 ```
-
 
 发布地址: [MCBBS](https://www.mcbbs.net/thread-1297813-1-1.html)  
 
