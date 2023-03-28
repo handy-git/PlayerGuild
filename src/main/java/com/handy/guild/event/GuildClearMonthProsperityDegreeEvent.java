@@ -17,16 +17,19 @@ public class GuildClearMonthProsperityDegreeEvent extends Event {
     private static final HandlerList HANDLERS = new HandlerList();
     private final Map<Integer, List<OfflinePlayer>> member;
     private final String guildName;
+    private final Integer monthProsperityDegree;
 
     /**
      * 构造器
      *
-     * @param member    成员
-     * @param guildName 公会名
+     * @param member                成员
+     * @param guildName             公会名
+     * @param monthProsperityDegree 月度活跃
      */
-    public GuildClearMonthProsperityDegreeEvent(Map<Integer, List<OfflinePlayer>> member, String guildName) {
+    public GuildClearMonthProsperityDegreeEvent(Map<Integer, List<OfflinePlayer>> member, String guildName, Integer monthProsperityDegree) {
         this.member = member;
         this.guildName = guildName;
+        this.monthProsperityDegree = monthProsperityDegree;
     }
 
     public static HandlerList getHandlerList() {
@@ -55,6 +58,15 @@ public class GuildClearMonthProsperityDegreeEvent extends Event {
      */
     public String getGuildName() {
         return guildName;
+    }
+
+    /**
+     * 获取月度活跃
+     *
+     * @return 月度活跃
+     */
+    public Integer getMonthProsperityDegree() {
+        return monthProsperityDegree;
     }
 
 }
