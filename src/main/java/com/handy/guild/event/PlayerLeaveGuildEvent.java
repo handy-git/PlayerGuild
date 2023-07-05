@@ -14,6 +14,7 @@ public class PlayerLeaveGuildEvent extends Event {
     private static final HandlerList HANDLERS = new HandlerList();
     private final Player player;
     private final Integer guildPlayerId;
+    private final String leaveType;
 
     @Override
     public HandlerList getHandlers() {
@@ -24,9 +25,10 @@ public class PlayerLeaveGuildEvent extends Event {
         return HANDLERS;
     }
 
-    public PlayerLeaveGuildEvent(Player player, Integer guildPlayerId) {
+    public PlayerLeaveGuildEvent(Player player, Integer guildPlayerId, String leaveType) {
         this.player = player;
         this.guildPlayerId = guildPlayerId;
+        this.leaveType = leaveType;
     }
 
     /**
@@ -45,6 +47,18 @@ public class PlayerLeaveGuildEvent extends Event {
      */
     public Player getPlayer() {
         return player;
+    }
+
+    /**
+     * 离开类型
+     * 主动离开 activeLeave
+     * 被踢离开 kickedLeave
+     *
+     * @return 类型
+     * @since 1.9.4
+     */
+    public String getLeaveType() {
+        return leaveType;
     }
 
 }
