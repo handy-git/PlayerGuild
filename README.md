@@ -5,6 +5,6 @@ PlayerGuild 插件 版本控制
 
 [MCBBS](https://www.mcbbs.net/thread-1297813-1-1.html)  
 
-[wiki](https://handy-git.gitee.io/rice-doc/#/PlayerGuild/zh_CN/)
+[wiki](https://ricedoc.handyplus.cn/wiki/PlayerGuild/README/)
 
 [javadoc](https://handy-git.github.io/PlayerGuild/)

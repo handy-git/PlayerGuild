@@ -1,5 +1,6 @@
 package com.handy.guild.event;
 
+import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
@@ -13,6 +14,8 @@ import org.bukkit.event.HandlerList;
 public class PlayerLeaveGuildEvent extends Event {
     private static final HandlerList HANDLERS = new HandlerList();
     private final Player player;
+
+    private final OfflinePlayer offlinePlayer;
     private final Integer guildPlayerId;
     private final String leaveType;
 
@@ -25,10 +28,18 @@ public class PlayerLeaveGuildEvent extends Event {
         return HANDLERS;
     }
 
-    public PlayerLeaveGuildEvent(Player player, Integer guildPlayerId, String leaveType) {
+    public PlayerLeaveGuildEvent(Player player, Integer guildPlayerId) {
         this.player = player;
         this.guildPlayerId = guildPlayerId;
-        this.leaveType = leaveType;
+        this.leaveType = "activeLeave";
+        this.offlinePlayer = null;
+    }
+
+    public PlayerLeaveGuildEvent(OfflinePlayer player, Integer guildPlayerId) {
+        this.player = null;
+        this.guildPlayerId = guildPlayerId;
+        this.leaveType = "kickedLeave";
+        this.offlinePlayer = player;
     }
 
     /**
@@ -41,12 +52,22 @@ public class PlayerLeaveGuildEvent extends Event {
     }
 
     /**
-     * 获取离开玩家
+     * 获取主动离开玩家
      *
      * @return 离开玩家
      */
     public Player getPlayer() {
         return player;
+    }
+
+    /**
+     * 获取被踢离开玩家
+     *
+     * @return 离开玩家
+     * @since 1.9.6
+     */
+    public OfflinePlayer getOfflinePlayer() {
+        return offlinePlayer;
     }
 
     /**
