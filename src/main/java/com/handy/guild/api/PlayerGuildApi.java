@@ -376,4 +376,25 @@ public class PlayerGuildApi {
         return new ArrayList<>();
     }
 
+    /**
+     * 获取全部公会名称
+     *
+     * @return 公会名称集合
+     * @since 1.10.0
+     */
+    public List<String> getAllGuildName() {
+        return new ArrayList<>();
+    }
+
+    /**
+     * 根据公会名称获取全部公会成员名称
+     *
+     * @param guildName 公会名
+     * @return 公会成员
+     * @since 1.10.0
+     */
+    public List<String> getGuildPlayer(String guildName) {
+        return new ArrayList<>();
+    }
+
 }
