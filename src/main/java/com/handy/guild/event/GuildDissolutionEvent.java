@@ -53,4 +53,24 @@ public class GuildDissolutionEvent extends Event {
         return guildId;
     }
 
+    /**
+     * 获取公会名称
+     *
+     * @return 公会名称
+     * @since 1.12.9
+     */
+    public String getGuildName() {
+        return "";
+    }
+
+    /**
+     * 获取无颜色代码的公会名称
+     *
+     * @return 公会名称
+     * @since 1.12.9
+     */
+    public String getStripColorGuildName() {
+        return "";
+    }
+
 }
