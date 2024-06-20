@@ -1,6 +1,7 @@
 # PlayerGuild
 
-> PlayerGuild API仓库，本仓库只有对应空API实现
+> PlayerGuild API仓库，本仓库只有对应空API实现  
+> PlayerGuild API jar可在 actions 中下载自动构建好的
 
 ![适用核心](https://img.shields.io/badge/适用核心-Spigot|Folia-blue)
 ![适用版本](https://img.shields.io/badge/适用版本-1.7.x--1.21.x-blue)
