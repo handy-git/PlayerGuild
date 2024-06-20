@@ -3,7 +3,7 @@
 > PlayerGuild API仓库，本仓库只有对应空API实现
 
 ![适用核心](https://img.shields.io/badge/适用核心-Spigot|Folia-blue)
-![适用版本](https://img.shields.io/badge/适用版本-1.7.x--1.20.x-blue)
+![适用版本](https://img.shields.io/badge/适用版本-1.7.x--1.21.x-blue)
 ![是否付费](https://img.shields.io/badge/是否付费-是-blue)
 ![购买价格](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fafdian.net%2Fapi%2Fcreator%2Fget-plan-skus%3Fplan_id%3D0d1d56ae6b8111ecbbac52540025c377&query=%24.data.plan.show_price&suffix=CNY&label=%E8%B4%AD%E4%B9%B0%E4%BB%B7%E6%A0%BC)
 ![最新版本](https://img.shields.io/github/v/release/handy-git/PlayerGuild?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)
