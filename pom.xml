@@ -7,7 +7,7 @@
     <groupId>com.handy.guild</groupId>
     <name>PlayerGuild</name>
     <artifactId>PlayerGuild</artifactId>
-    <version>1.13.1</version>
+    <version>1.13.2</version>
     <description>一个有点好用的玩家公会插件</description>
 
     <properties>
