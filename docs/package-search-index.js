@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"com.handy.guild.api"},{"l":"com.handy.guild.event"},{"l":"com.handy.guild.param"},{"l":"所有程序包","u":"allpackages-index.html"}];updateSearchResults();
+packageSearchIndex = [{"l":"com.handy.guild.api"},{"l":"com.handy.guild.enter"},{"l":"com.handy.guild.event"},{"l":"com.handy.guild.param"},{"l":"所有程序包","u":"allpackages-index.html"}];updateSearchResults();

@@ -7,13 +7,14 @@
     <groupId>com.handy.guild</groupId>
     <name>PlayerGuild</name>
     <artifactId>PlayerGuild</artifactId>
-    <version>1.13.2</version>
+    <version>1.13.5</version>
     <description>一个有点好用的玩家公会插件</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spigot-api.vesion>1.21-R0.1-SNAPSHOT</spigot-api.vesion>
         <lombok.version>1.18.32</lombok.version>
+        <annotations.version>24.1.0</annotations.version>
     </properties>
 
     <dependencies>
@@ -28,6 +29,12 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>${annotations.version}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
