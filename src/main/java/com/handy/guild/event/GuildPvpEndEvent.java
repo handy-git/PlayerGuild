@@ -2,6 +2,7 @@ package com.handy.guild.event;
 
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * 匹配公会战 结束事件
@@ -15,7 +16,7 @@ public class GuildPvpEndEvent extends Event {
     private final Integer winGuildId;
 
     @Override
-    public HandlerList getHandlers() {
+    public @NotNull HandlerList getHandlers() {
         return HANDLERS;
     }
 

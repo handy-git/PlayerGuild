@@ -3,6 +3,7 @@ package com.handy.guild.event;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * 公会解散事件
@@ -17,7 +18,7 @@ public class GuildDissolutionEvent extends Event {
     private final String guildName;
 
     @Override
-    public HandlerList getHandlers() {
+    public @NotNull HandlerList getHandlers() {
         return HANDLERS;
     }
 
@@ -74,7 +75,7 @@ public class GuildDissolutionEvent extends Event {
      * @since 1.12.9
      */
     public String getStripColorGuildName() {
-        return guildName;
+        return "";
     }
 
 }

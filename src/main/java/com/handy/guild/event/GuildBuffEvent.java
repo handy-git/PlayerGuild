@@ -5,16 +5,18 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
+
 /**
- * 匹配公会战 匹配事件
+ * 公会buff事件
  *
  * @author handy
- * @since 1.0.0
+ * @since 1.9.4
  */
-public class GuildPvpMatchEvent extends Event {
+public class GuildBuffEvent extends Event {
     private static final HandlerList HANDLERS = new HandlerList();
-    private final Integer guildId;
     private final Player player;
+    private final List<String> buffList;
 
     @Override
     public @NotNull HandlerList getHandlers() {
@@ -25,27 +27,27 @@ public class GuildPvpMatchEvent extends Event {
         return HANDLERS;
     }
 
-    public GuildPvpMatchEvent(Player player, Integer guildId) {
+    public GuildBuffEvent(Player player, List<String> buffList) {
         this.player = player;
-        this.guildId = guildId;
+        this.buffList = buffList;
     }
 
     /**
-     * 获取匹配公会id
+     * 获取Player
      *
-     * @return 公会id
-     */
-    public Integer getGuildId() {
-        return guildId;
-    }
-
-    /**
-     * 获取匹配玩家
-     *
-     * @return 玩家
+     * @return Player
      */
     public Player getPlayer() {
-        return player;
+        return this.player;
+    }
+
+    /**
+     * 获取全部buff信息
+     *
+     * @return buff信息
+     */
+    public List<String> getBuffList() {
+        return this.buffList;
     }
 
 }

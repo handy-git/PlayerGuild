@@ -1,6 +1,8 @@
 package com.handy.guild.api;
 
+import com.handy.guild.constants.GuildRoleEnum;
 import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +23,7 @@ public class PlayerGuildApi {
     }
 
     public static PlayerGuildApi getInstance() {
-        return PlayerGuildApi.SingletonHolder.INSTANCE;
+        return SingletonHolder.INSTANCE;
     }
 
     /**
@@ -32,7 +34,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean giveGuildMoneyByName(String guildName, int money) {
+    public boolean giveGuildMoneyByName(@NotNull String guildName, int money) {
         return true;
     }
 
@@ -44,7 +46,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean takeGuildMoneyByName(String guildName, int money) {
+    public boolean takeGuildMoneyByName(@NotNull String guildName, int money) {
         return true;
     }
 
@@ -56,7 +58,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean setGuildMoneyByName(String guildName, int money) {
+    public boolean setGuildMoneyByName(@NotNull String guildName, int money) {
         return true;
     }
 
@@ -68,7 +70,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean giveGuildProsperityDegreeByName(String guildName, int money) {
+    public boolean giveGuildProsperityDegreeByName(@NotNull String guildName, int money) {
         return true;
     }
 
@@ -80,7 +82,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean takeGuildProsperityDegreeByName(String guildName, int money) {
+    public boolean takeGuildProsperityDegreeByName(@NotNull String guildName, int money) {
         return true;
     }
 
@@ -92,7 +94,44 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean setGuildProsperityDegreeByName(String guildName, int money) {
+    public boolean setGuildProsperityDegreeByName(@NotNull String guildName, int money) {
+        return true;
+    }
+
+
+    /**
+     * 增加公会矿石
+     *
+     * @param guildName 公会名称
+     * @param money     活跃
+     * @return true/成功
+     * @since 1.11.3
+     */
+    public boolean giveGuildOreByName(@NotNull String guildName, int money) {
+        return true;
+    }
+
+    /**
+     * 减少公会矿石
+     *
+     * @param guildName 公会名称
+     * @param money     活跃
+     * @return true/成功
+     * @since 1.11.3
+     */
+    public boolean takeGuildOreByName(@NotNull String guildName, int money) {
+        return true;
+    }
+
+    /**
+     * 设置公会矿石
+     *
+     * @param guildName 公会名称
+     * @param money     活跃
+     * @return true/成功
+     * @since 1.11.3
+     */
+    public boolean setGuildOreByName(@NotNull String guildName, int money) {
         return true;
     }
 
@@ -103,8 +142,10 @@ public class PlayerGuildApi {
      * @param money      贡献
      * @return true/成功
      * @since 1.0.2
+     * @deprecated 请使用 {@link #givePlayerMoneyByName(Player, int)} 方法。
      */
-    public boolean givePlayerMoneyByName(String playerName, int money) {
+    @Deprecated
+    public boolean givePlayerMoneyByName(@NotNull String playerName, int money) {
         return true;
     }
 
@@ -115,8 +156,10 @@ public class PlayerGuildApi {
      * @param money      贡献
      * @return true/成功
      * @since 1.0.2
+     * @deprecated 请使用 {@link #takePlayerMoneyByName(Player, int)} 方法。
      */
-    public boolean takePlayerMoneyByName(String playerName, int money) {
+    @Deprecated
+    public boolean takePlayerMoneyByName(@NotNull String playerName, int money) {
         return true;
     }
 
@@ -127,8 +170,10 @@ public class PlayerGuildApi {
      * @param money      贡献
      * @return true/成功
      * @since 1.0.2
+     * @deprecated 请使用 {@link #setPlayerMoneyByName(Player, int)} 方法。
      */
-    public boolean setPlayerMoneyByName(String playerName, int money) {
+    @Deprecated
+    public boolean setPlayerMoneyByName(@NotNull String playerName, int money) {
         return true;
     }
 
@@ -140,7 +185,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean givePlayerMoneyByName(Player player, int money) {
+    public boolean givePlayerMoneyByName(@NotNull Player player, int money) {
         return true;
     }
 
@@ -152,7 +197,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean takePlayerMoneyByName(Player player, int money) {
+    public boolean takePlayerMoneyByName(@NotNull Player player, int money) {
         return true;
     }
 
@@ -164,7 +209,7 @@ public class PlayerGuildApi {
      * @return true/成功
      * @since 1.0.2
      */
-    public boolean setPlayerMoneyByName(Player player, int money) {
+    public boolean setPlayerMoneyByName(@NotNull Player player, int money) {
         return true;
     }
 
@@ -175,7 +220,7 @@ public class PlayerGuildApi {
      * @return 公会名
      * @since 1.0.2
      */
-    public String getPlayerGuildName(Player player) {
+    public String getPlayerGuildName(@NotNull Player player) {
         return null;
     }
 
@@ -185,8 +230,10 @@ public class PlayerGuildApi {
      * @param playerName 玩家名
      * @return 公会名
      * @since 1.0.2
+     * @deprecated 请使用 {@link #getPlayerGuildName(Player)} 方法。
      */
-    public String getPlayerGuildName(String playerName) {
+    @Deprecated
+    public String getPlayerGuildName(@NotNull String playerName) {
         return null;
     }
 
@@ -197,7 +244,7 @@ public class PlayerGuildApi {
      * @return 玩家贡献
      * @since 1.0.2
      */
-    public Integer getPlayerMoney(Player player) {
+    public Integer getPlayerMoney(@NotNull Player player) {
         return 0;
     }
 
@@ -207,8 +254,10 @@ public class PlayerGuildApi {
      * @param playerName 玩家名
      * @return 玩家贡献
      * @since 1.0.2
+     * @deprecated 请使用 {@link #getPlayerMoney(Player)} 方法。
      */
-    public Integer getPlayerMoney(String playerName) {
+    @Deprecated
+    public Integer getPlayerMoney(@NotNull String playerName) {
         return 0;
     }
 
@@ -219,18 +268,20 @@ public class PlayerGuildApi {
      * @return 玩家捐赠贡献
      * @since 1.7.4
      */
-    public Integer getPlayerGuildMoney(Player player) {
+    public Integer getPlayerGuildMoney(@NotNull Player player) {
         return 0;
     }
 
     /**
-     * 获取玩家捐赠贡献
+     * 获取玩家贡献资金
      *
      * @param playerName 玩家名
-     * @return 玩家捐赠贡献
+     * @return 玩家捐贡献资金
      * @since 1.7.4
+     * @deprecated 请使用 {@link #getPlayerGuildMoney(Player)} 方法。
      */
-    public Integer getPlayerGuildMoney(String playerName) {
+    @Deprecated
+    public Integer getPlayerGuildMoney(@NotNull String playerName) {
         return 0;
     }
 
@@ -241,7 +292,7 @@ public class PlayerGuildApi {
      * @return 公会玩家名称集合
      * @since 1.2.1
      */
-    public List<String> getPlayerGuildMember(Player player) {
+    public List<String> getPlayerGuildMember(@NotNull Player player) {
         return new ArrayList<>();
     }
 
@@ -251,8 +302,10 @@ public class PlayerGuildApi {
      * @param playerName 玩家名
      * @return 公会玩家名称集合
      * @since 1.2.0
+     * @deprecated 请使用 {@link #getPlayerGuildMember(Player)} 方法。
      */
-    public List<String> getPlayerGuildMember(String playerName) {
+    @Deprecated
+    public List<String> getPlayerGuildMember(@NotNull String playerName) {
         return new ArrayList<>();
     }
 
@@ -263,7 +316,7 @@ public class PlayerGuildApi {
      * @return 公会职位
      * @since 1.2.1
      */
-    public String getPlayerGuildRole(Player player) {
+    public String getPlayerGuildRole(@NotNull Player player) {
         return null;
     }
 
@@ -273,8 +326,21 @@ public class PlayerGuildApi {
      * @param playerName 玩家名
      * @return 公会职位
      * @since 1.2.1
+     * @deprecated 请使用 {@link #getPlayerGuildRole(Player)} 方法。
      */
-    public String getPlayerGuildRole(String playerName) {
+    @Deprecated
+    public String getPlayerGuildRole(@NotNull String playerName) {
+        return null;
+    }
+
+    /**
+     * 获取玩家公会职位Enum
+     *
+     * @param player 玩家
+     * @return 公会角色
+     * @since 1.13.6
+     */
+    public GuildRoleEnum getPlayerGuildRoleEnum(@NotNull Player player) {
         return null;
     }
 
@@ -285,7 +351,7 @@ public class PlayerGuildApi {
      * @return 玩家公会战击杀次数
      * @since 1.4.6
      */
-    public Integer getPlayerKill(Player player) {
+    public Integer getPlayerKill(@NotNull Player player) {
         return 0;
     }
 
@@ -295,9 +361,10 @@ public class PlayerGuildApi {
      * @param playerName 玩家名
      * @return 家公会战击杀次数
      * @since 1.4.6
+     * @deprecated 请使用 {@link #getPlayerKill(Player)} 方法。
      */
-    public Integer getPlayerKill(String playerName) {
-
+    @Deprecated
+    public Integer getPlayerKill(@NotNull String playerName) {
         return 0;
     }
 
@@ -308,8 +375,7 @@ public class PlayerGuildApi {
      * @return 玩家公会战死亡次数
      * @since 1.4.6
      */
-    public Integer getPlayerDie(Player player) {
-
+    public Integer getPlayerDie(@NotNull Player player) {
         return 0;
     }
 
@@ -319,9 +385,10 @@ public class PlayerGuildApi {
      * @param playerName 玩家名
      * @return 玩家公会战
      * @since 1.4.6
+     * @deprecated 请使用 {@link #getPlayerDie(Player)} 方法。
      */
-    public Integer getPlayerDie(String playerName) {
-
+    @Deprecated
+    public Integer getPlayerDie(@NotNull String playerName) {
         return 0;
     }
 
@@ -332,8 +399,8 @@ public class PlayerGuildApi {
      * @return true pvp中
      * @since 1.5.4
      */
-    public boolean isPvp(Player player) {
-        return true;
+    public boolean isPvp(@NotNull Player player) {
+        return false;
     }
 
     /**
@@ -342,7 +409,8 @@ public class PlayerGuildApi {
      * @param player 玩家
      * @since 1.5.9
      */
-    public void closePvp(Player player) {
+    public void closePvp(@NotNull Player player) {
+
     }
 
     /**
@@ -351,7 +419,7 @@ public class PlayerGuildApi {
      * @param player 玩家
      * @since 1.5.9
      */
-    public void openPvp(Player player) {
+    public void openPvp(@NotNull Player player) {
     }
 
     /**
@@ -361,7 +429,7 @@ public class PlayerGuildApi {
      * @return 玩家uuid集合
      * @since 1.6.2
      */
-    public List<UUID> getMatchStartPlayer(Integer guildId) {
+    public List<UUID> getMatchStartPlayer(@NotNull Integer guildId) {
         return new ArrayList<>();
     }
 
@@ -372,7 +440,7 @@ public class PlayerGuildApi {
      * @return 玩家uuid集合
      * @since 1.6.2
      */
-    public List<UUID> getSeasonStartPlayer(Integer guildId) {
+    public List<UUID> getSeasonStartPlayer(@NotNull Integer guildId) {
         return new ArrayList<>();
     }
 
@@ -393,7 +461,7 @@ public class PlayerGuildApi {
      * @return 公会成员
      * @since 1.10.0
      */
-    public List<String> getGuildPlayer(String guildName) {
+    public List<String> getGuildPlayer(@NotNull String guildName) {
         return new ArrayList<>();
     }
 

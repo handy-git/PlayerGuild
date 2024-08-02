@@ -3,6 +3,7 @@ package com.handy.guild.event;
 import com.handy.guild.param.GuildSeasonPvpPlayerParam;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class GuildSeasonPvpEndEvent extends Event {
     private final Integer season;
 
     @Override
-    public HandlerList getHandlers() {
+    public @NotNull HandlerList getHandlers() {
         return HANDLERS;
     }
 

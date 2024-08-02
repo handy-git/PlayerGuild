@@ -2,6 +2,7 @@ package com.handy.guild.event;
 
 import com.handy.guild.enter.GuildInfo;
 import lombok.Getter;
+import org.bukkit.command.CommandSender;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
@@ -29,14 +30,22 @@ public class GuildUpEvent extends Event implements Cancellable {
     private final Integer newLevel;
 
     /**
+     * 操作人 控制台/玩家
+     *
+     * @since 1.13.6
+     */
+    private final CommandSender commandSender;
+
+    /**
      * 构造器
      *
      * @param guildInfo 公会
      * @param newLevel  新等级
      */
-    public GuildUpEvent(GuildInfo guildInfo, Integer newLevel) {
+    public GuildUpEvent(@NotNull GuildInfo guildInfo, @NotNull Integer newLevel, @NotNull CommandSender commandSender) {
         this.guildInfo = guildInfo;
         this.newLevel = newLevel;
+        this.commandSender = commandSender;
     }
 
     public static HandlerList getHandlerList() {
