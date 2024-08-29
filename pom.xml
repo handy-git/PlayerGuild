@@ -7,13 +7,13 @@
     <groupId>com.handy.guild</groupId>
     <name>PlayerGuild</name>
     <artifactId>PlayerGuild</artifactId>
-    <version>1.13.7</version>
+    <version>1.13.9</version>
     <description>一个有点好用的玩家公会插件</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot-api.vesion>1.21-R0.1-SNAPSHOT</spigot-api.vesion>
-        <lombok.version>1.18.32</lombok.version>
+        <spigot-api.vesion>1.21.1-R0.1-SNAPSHOT</spigot-api.vesion>
+        <lombok.version>1.18.34</lombok.version>
         <annotations.version>24.1.0</annotations.version>
     </properties>
 

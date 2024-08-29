@@ -1,6 +1,7 @@
 package com.handy.guild.api;
 
 import com.handy.guild.constants.GuildRoleEnum;
+import com.handy.guild.enter.GuildInfo;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
@@ -451,6 +452,16 @@ public class PlayerGuildApi {
      * @since 1.10.0
      */
     public List<String> getAllGuildName() {
+        return new ArrayList<>();
+    }
+
+    /**
+     * 获取全部公会信息
+     *
+     * @return 公会信息集合
+     * @since 1.13.9
+     */
+    public List<GuildInfo> getAllGuild() {
         return new ArrayList<>();
     }
 
